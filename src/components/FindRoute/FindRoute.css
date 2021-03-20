@@ -1,0 +1,22 @@
+.map-image{
+    height:100%
+}
+
+.single-v{
+    display: flex;
+    justify-content: flex-around;
+    background: white;
+    /* margin: 5px 5px; */
+    margin-top: 10px;
+    padding: 5px 5px;
+}
+
+.v-container{
+    background:white;
+}
+
+.single-v img{
+    height: 30px;
+}
+
+

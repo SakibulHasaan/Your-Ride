@@ -1,0 +1,18 @@
+.rides-container{
+    height: 100vh;
+}
+
+single-ride{
+    background-color: #fff;
+    height:200px;
+    width:200px;
+}
+
+.single-ride:hover{
+    cursor: pointer;
+}
+
+img{
+    height: 139px;
+}
+

@@ -6,4 +6,5 @@ Conditional Rendering etc. You can create an account and login to it to search a
 to see in the map.
 
 Hope you'll enjoy the live site. Here is the link
-live site: 
+
+live site: https://yourride.netlify.app/
