@@ -47,6 +47,12 @@ const Home = () => {
     return (
         <div className="container rides-container justify-content-center">
             <div className="row  w-100">
+
+                <div style={{textAlign: 'center'}}> 
+                    <h1 className="text-info">Your Ride is your best travel partner of this country</h1>
+                    <p>We offer multiple vehicle services. Choose one of the service listed below and enjoy your ride</p>
+                </div>
+
                 {
                     rides.map((ride) =>
                         <div onclick={() => handleDivClick(ride.name)} className="col-md-3 p-3 col-sm-12 shadow mt-5">
