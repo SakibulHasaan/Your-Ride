@@ -69,7 +69,7 @@ const FindRoute = () => {
                             <h1>Your Selected Ride is {vehicle}</h1>
                             <form onSubmit={showRoute}>
                                 <input className="form-control" name="from" type="text" onBlur={handleBlur} placeholder="From" required />
-                                <input className="form-control" name="to" type="text" placeholder="To" required />
+                                <input className="form-control" name="to" type="text" onBlur={handleBlur} placeholder="To" required />
                                 <input className='btn btn-info' type="submit" value="Search" />
                             </form>
                         </div>
@@ -77,34 +77,34 @@ const FindRoute = () => {
                         :
 
                         <div className="v-container w-30 col-md-6 col-sm-12">
+                            
                             <h1>{from}</h1>
                             <h1>{to}</h1>
 
-                            <div className="single-v bg-secondary">
+                            <div className="single-v bg-light">
                                 <img src={rideInfo.image} alt="" />
                                 <h3>&nbsp; {rideInfo.name}</h3>
                                 <h3>&nbsp; P: 1 </h3>
                                 <h3> &nbsp; ${rideInfo.price * 1}</h3>
                             </div>
 
-                            <div className="single-v bg-primary">
+                            <div className="single-v bg-light">
                                 <img src={rideInfo.image} alt="" />
                                 <h3>&nbsp; {rideInfo.name}</h3>
                                 <h3>&nbsp; P: 2</h3>
                                 <h3>&nbsp; ${rideInfo.price * 2}</h3>
                             </div>
 
-                            <div className="single-v bg-info">
+                            <div className="single-v bg-light">
                                 <img src={rideInfo.image} alt="" />
                                 <h3>&nbsp; {rideInfo.name}</h3>
                                 <h3>&nbsp; P: 4</h3>
                                 <h3>&nbsp; ${rideInfo.price * 4}</h3>
                             </div>
                         </div>
-
                 }
 
-                <div w-50 className="col-md-6 col-sm-12">
+                <div className="w-50 col-md-6 col-sm-12 map">
                     <GoogleMap></GoogleMap>
                 </div>
 
